@@ -173,12 +173,6 @@ e.Red = "#e04c4f",
 e.Gray = "#666666",
 e))(ho || {})
   , ae = (e=>(e.Boot = "/",
-e.Singleplayer = "/singleplayer",
-e.Multiplayer = "/multiplayer",
-e.Sync = "/sync",
-e.Info = "/info",
-e.Crashed = "/crashed",
-e.Account = "/account",
 e))(ae || {});
 class go {
     constructor(t) {
@@ -354,7 +348,7 @@ class bo {
         return t === g.Newcomer ? "Ice Dodo" : g[t]
     }
     static getCupSkinUrl(t) {
-        return `/assets/skins/${g[t].toLowerCase()}.png`
+        return `/maptester/assets/skins/${g[t].toLowerCase()}.png`
     }
     static isOnlyOnWebsite(t, n) {
         if (!n)
